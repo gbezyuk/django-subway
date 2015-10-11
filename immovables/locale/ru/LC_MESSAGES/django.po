@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-11 14:48+0300\n"
+"POT-Creation-Date: 2015-10-11 16:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,98 +19,133 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: admin.py:7
+#: admin.py:8
 msgid "Immovables"
 msgstr "Недвижимость"
 
-#: models.py:11 models.py:37
-msgid "district"
-msgstr "район"
+#: admin.py:29 admin.py:50
+msgid "cover photo not set"
+msgstr "нет фото обложки"
 
-#: models.py:12
-msgid "districts"
-msgstr "районы"
-
-#: models.py:20 models.py:41
-msgid "developer"
-msgstr "застройщик"
-
-#: models.py:21
-msgid "developers"
-msgstr "застройщики"
-
-#: models.py:29 models.py:52 models.py:73
-msgid "housing estate"
-msgstr "жилой комплекс"
-
-#: models.py:30
-msgid "housing estates"
-msgstr "жилые комплексы"
-
-#: models.py:35 models.py:70
+#: admin.py:31 admin.py:52 models.py:36 models.py:77
 msgid "cover photo"
 msgstr "фото обложки"
 
-#: models.py:38
+#: models.py:12 models.py:38
+msgid "district"
+msgstr "район"
+
+#: models.py:13
+msgid "districts"
+msgstr "районы"
+
+#: models.py:21 models.py:42
+msgid "developer"
+msgstr "застройщик"
+
+#: models.py:22
+msgid "developers"
+msgstr "застройщики"
+
+#: models.py:30 models.py:53 models.py:79
+msgid "housing estate"
+msgstr "жилой комплекс"
+
+#: models.py:31
+msgid "housing estates"
+msgstr "жилые комплексы"
+
+#: models.py:39
 msgid "subway station"
 msgstr "станция метро"
 
-#: models.py:39
+#: models.py:40
 msgid "address"
 msgstr "адрес"
 
-#: models.py:43 models.py:76
+#: models.py:44
 msgid "deadline"
 msgstr "срок сдачи"
 
-#: models.py:44 models.py:77
+#: models.py:45
 msgid "is delivered"
 msgstr "объект сдан"
 
-#: models.py:49
+#: models.py:50
 msgid "housing estate additional photo"
 msgstr "дополнительное фото ЖК"
 
-#: models.py:50
+#: models.py:51
 msgid "housing estate additional photos"
 msgstr "дополнительные фото ЖК"
 
-#: models.py:53 models.py:89
+#: models.py:54 models.py:105
 msgid "photo"
 msgstr "фото"
 
-#: models.py:58 models.py:72
+#: models.py:59 models.py:80
 msgid "flat type"
 msgstr "количество комнат"
 
-#: models.py:59
+#: models.py:60
 msgid "flat types"
 msgstr "количества комнат"
 
-#: models.py:64 models.py:88
+#: models.py:65 models.py:90
+msgid "finishing type"
+msgstr "тип отделки"
+
+#: models.py:66
+msgid "finishing types"
+msgstr "типы отделки"
+
+#: models.py:71 models.py:104
 msgid "assignation"
 msgstr "переуступка"
 
-#: models.py:65
+#: models.py:72
 msgid "assignations"
 msgstr "переуступки"
 
-#: models.py:74
-msgid "square"
-msgstr "площадь"
+#: models.py:82
+msgid "total area"
+msgstr "общая площадь"
 
-#: models.py:79
+#: models.py:83
+msgid "living area"
+msgstr "жилая площадь"
+
+#: models.py:84
+msgid "kitchen area"
+msgstr "площадь кухни"
+
+#: models.py:86
+msgid "floor"
+msgstr "этаж"
+
+#: models.py:87
+msgid "floors total"
+msgstr "всего этажей в доме"
+
+#: models.py:88
+msgid "elevator available"
+msgstr "наличие лифта"
+
+#: models.py:92
 msgid "price"
 msgstr "цена"
 
-#: models.py:80
+#: models.py:93
 msgid "your commission"
 msgstr "ваша коммиссия"
 
-#: models.py:85
+#: models.py:101
 msgid "assignation additional photo"
 msgstr "дополнительное фото переуступки"
 
-#: models.py:86
+#: models.py:102
 msgid "assignation additional photos"
 msgstr "дополнительные фото переуступок"
+
+#~ msgid "square"
+#~ msgstr "площадь"

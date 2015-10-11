@@ -1,0 +1,42 @@
+[
+{
+    "pk": 1,
+    "fields": {
+        "name": "\u0411\u0435\u0437 \u043e\u0442\u0434\u0435\u043b\u043a\u0438",
+        "modified": "2015-10-11T12:55:35.052Z",
+        "is_enabled": true,
+        "created": "2015-10-11T12:55:35.052Z"
+    },
+    "model": "immovables.finishingtype"
+},
+{
+    "pk": 2,
+    "fields": {
+        "name": "\u0411\u0430\u0437\u043e\u0432\u0430\u044f \u043e\u0442\u0434\u0435\u043b\u043a\u0430",
+        "modified": "2015-10-11T12:55:43.640Z",
+        "is_enabled": true,
+        "created": "2015-10-11T12:55:43.640Z"
+    },
+    "model": "immovables.finishingtype"
+},
+{
+    "pk": 3,
+    "fields": {
+        "name": "\u0427\u0438\u0441\u0442\u043e\u0432\u0430\u044f \u043e\u0442\u0434\u0435\u043b\u043a\u0430",
+        "modified": "2015-10-11T12:55:51.111Z",
+        "is_enabled": true,
+        "created": "2015-10-11T12:55:51.111Z"
+    },
+    "model": "immovables.finishingtype"
+},
+{
+    "pk": 4,
+    "fields": {
+        "name": "\u0414\u0438\u0437\u0430\u0439\u043d\u0435\u0440\u0441\u043a\u0430\u044f \u043e\u0442\u0434\u0435\u043b\u043a\u0430",
+        "modified": "2015-10-11T12:55:58.622Z",
+        "is_enabled": true,
+        "created": "2015-10-11T12:55:58.622Z"
+    },
+    "model": "immovables.finishingtype"
+}
+]

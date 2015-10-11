@@ -38,8 +38,10 @@ echo ' - subway'
 echo ' - districts'
 ./manage.py loaddata immovables/fixtures/districts.json
 echo ' - flat types'
-./manage.py loaddata immovables/fixtures/flattypes.json
+./manage.py loaddata immovables/fixtures/flat_types.json
+echo ' - finishing types'
+./manage.py loaddata immovables/fixtures/finishing_types.json
 echo '\n'
 
 echo 'All done. you are ready to activate your virtual environment, create superuser and run the development server'
-echo "Use 'source venv/bin/activate', then './manage.py createsuperuser' and './manage.py runserver'"
+echo "Use 'source venv/bin/activate', then './manage.py createsuperuser' and './manage.py runserver_plus'"

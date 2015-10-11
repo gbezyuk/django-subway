@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from core.shared.models import TimestampsModel, NameTimestampsModel, OrderedModel, IsEnabledModel
+from core.shared.fields import PositiveDecimalField
 from filebrowser.fields import FileBrowseField
 from colorful.fields import RGBColorField
 from subway.models import Station
@@ -59,6 +60,12 @@ class FlatType(NameTimestampsModel, IsEnabledModel):
         verbose_name_plural = _('flat types')
 
 
+class FinishingType(NameTimestampsModel, IsEnabledModel):
+    class Meta:
+        verbose_name = _('finishing type')
+        verbose_name_plural = _('finishing types')
+
+
 class Assignation(TimestampsModel, IsEnabledModel):
     class Meta:
         verbose_name = _('assignation')
@@ -69,15 +76,24 @@ class Assignation(TimestampsModel, IsEnabledModel):
 
     cover_photo = FileBrowseField(verbose_name=_('cover photo'), directory='assignations/cover_photos/', extensions=['.jpg', '.png', '.jpeg'], max_length=500, blank=True, null=True)
 
-    flat_type = models.ForeignKey(to=FlatType, verbose_name=_('flat type'))
     housing_estate = models.ForeignKey(to=HousingEstate, verbose_name=_('housing estate'), blank=True, null=True)
-    square = models.PositiveIntegerField(verbose_name=_('square'))
+    flat_type = models.ForeignKey(to=FlatType, verbose_name=_('flat type'))
 
-    deadline = models.PositiveIntegerField(verbose_name=_('deadline'), blank=True, null=True)
-    is_delivered = models.BooleanField(verbose_name=_('is delivered'), default=False)
+    total_area = PositiveDecimalField(verbose_name=_('total area'), decimal_places=2, max_digits=10)
+    living_area = PositiveDecimalField(verbose_name=_('living area'), decimal_places=2, max_digits=10, blank=True, null=True)
+    kitchen_area = PositiveDecimalField(verbose_name=_('kitchen area'), decimal_places=2, max_digits=10, blank=True, null=True)
+
+    floor = models.PositiveIntegerField(verbose_name=_('floor'), blank=True, null=True)
+    floors_total = models.PositiveIntegerField(verbose_name=_('floors total'), blank=True, null=True)
+    elevator_available = models.BooleanField(verbose_name=_('elevator available'), default=True)
+
+    finishing_type = models.ForeignKey(to=FinishingType, verbose_name=_('finishing type'), blank=True, null=True)
 
     price = models.PositiveIntegerField(verbose_name=_('price'), blank=True, null=True)
     your_commission = models.PositiveIntegerField(verbose_name=_('your commission'), blank=True, null=True)
+
+    def __str__(self):
+        return self.housing_estate.name
 
 
 class AssignationAdditionalPhoto(TimestampsModel, IsEnabledModel):
