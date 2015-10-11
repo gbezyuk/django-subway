@@ -8,5 +8,29 @@
         <h1>{% trans "Assignations" %}</h1>
       </div>
     </div>
+    <div class="row">
+      <form role="form" class="form">
+        <div class="col-xs-12"><legend>{% trans "Filter" %}</legend></div>
+        {#% csrf_token %#}
+        <div class="col-md-6 col-xl-4">
+          {% with field=filter_form.subway_branch %}{% include 'mixins/form_field.html' %}{% endwith %}
+          {% with field=filter_form.subway_station %}{% include 'mixins/form_field.html' %}{% endwith %}
+          {% with field=filter_form.district %}{% include 'mixins/form_field.html' %}{% endwith %}
+        </div>
+        <div class="col-md-6 col-xl-4">
+          {% with field=filter_form.developer %}{% include 'mixins/form_field.html' %}{% endwith %}
+          {% with field=filter_form.housing_estate %}{% include 'mixins/form_field.html' %}{% endwith %}
+          {% with field=filter_form.flat_type %}{% include 'mixins/form_field.html' %}{% endwith %}
+        </div>
+        <div class="col-md-6 col-xl-4">
+          {% with field=filter_form.finishing_type %}{% include 'mixins/form_field.html' %}{% endwith %}
+        </div>
+        <div class="col-xs-12">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">{% trans "Filter" %}</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 {% endblock %}
