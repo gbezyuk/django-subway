@@ -6,3 +6,6 @@ django-filebrowser==3.6.1
 django-grappelli==2.7.1
 ipython==4.0.0
 pytz
+django-ordered-model==0.4.2
+
+git+git://github.com/gbezyuk/django-colorful.git@patch-1#egg=django-colorful

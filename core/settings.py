@@ -13,13 +13,20 @@ STATIC_URL = '/static/'
 INSTALLED_APPS = (
     'grappelli',
     'filebrowser',
-    'django_extensions',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',
+    'colorful',
+    'ordered_model',
+
+    'subway',
+    'immovables',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,7 +60,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-LANGUAGE_CODE = 'ru-ru'
+LANGUAGE_CODE = 'ru'
 TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
 USE_L10N = True
