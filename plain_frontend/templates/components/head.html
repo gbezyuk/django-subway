@@ -1,0 +1,56 @@
+{% load solo_tags %}
+{#% get_solo 'contacts.Contacts' as contacts %#}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ contacts.title }}</title>
+
+<!-- Fonts -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/static/bootstrap-4.0.0-alpha/dist/css/bootstrap.min.css" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- TODO: extract to django-solo -->
+
+<!-- OpenGraph Metatags -->
+<link rel="canonical" href="/" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="http://" />
+<meta property="og:site_name" content="" />
+
+<!-- Twitter Metatags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:title" content="Site Title" />
+<meta name="twitter:description" content="Site Summary Description" />
+<meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+
+<!-- JSON LinkedData -->
+<script type='application/ld+json'>
+  {
+    "@context": "http:\/\/schema.org",
+    "@type": "WebSite",
+    "url": "http:\/\/www.site.com\/",
+    "name": "Site Name",
+    "alternateName": "Site Name Alternative"}
+</script>
+
+<!-- RSS feed if present -->
+<!--link rel="alternate" type="application/rss+xml" title="Site Feed" href="/feed/index.rss" /-->
+
+<link rel='shortlink' href='/' />
+
+<!-- TODO: counters (via django-solo, too) -->
+
+<!-- TODO: icons for different devices -->

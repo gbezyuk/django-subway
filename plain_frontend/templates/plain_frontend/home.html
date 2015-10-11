@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="jumbotron">
+        <h1>{% trans "Welcome!" %}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <ul>
+        <a class="btn btn-primary btn-lg" href="{% url 'assignations' %}">{% trans "Assignations Database" %}</a>
+        <a class="btn btn-success btn-lg" href="{% url 'developers' %}">{% trans "Developers Database" %}</a>
+      </ul>
+    </div>
+  </div>
+  <div class="containerf-fluid">
+    <img class="img-responsive" alt="Welcome" src="http://lorempixel.com/output/business-q-g-1920-360-8.jpg">
+  </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load solo_tags i18n %}
+{#% get_solo 'contacts.Contacts' as contacts %#}
+<header class="container-fluid">
+
+  <nav class="navbar navbar-light bg-faded container">
+
+    <a class="navbar-brand" href="/">{% trans "Immovables" %}</a>
+
+    <ul class="nav navbar-nav">
+      <!--li class="nav-item active">
+        <a class="nav-link" href="/">{% trans "Home" %} <span class="sr-only">({% trans "current" %})</span></a>
+      </li-->
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'assignations' %}">{% trans "Assignations Database" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'developers' %}">{% trans "Developers Database" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">{% trans "About Us" %}</a>
+      </li>
+    </ul>
+
+    <!-- TODO: search -->
+    <form class="form-inline navbar-form pull-right">
+      <input class="form-control disabled" type="text" placeholder="Search" disabled="disabled">
+      <button class="btn btn-success-outline disabled" type="submit">Search</button>
+    </form>
+
+  </nav>
+</header>

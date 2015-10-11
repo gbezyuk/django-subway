@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^admin/grappelli/', include('grappelli.urls')),
     url(r'^admin/filebrowser/', include(site.urls)),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('plain_frontend.urls')),
 ]
 
 if settings.DEBUG:
