@@ -1,4 +1,5 @@
 from django.conf.urls import include, url, patterns
+from django.views.generic.base import RedirectView
 from django.contrib import admin
 from filebrowser.sites import site
 from django.conf import settings
@@ -7,7 +8,7 @@ urlpatterns = [
     url(r'^admin/grappelli/', include('grappelli.urls')),
     url(r'^admin/filebrowser/', include(site.urls)),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('plain_frontend.urls')),
+    url(r'^$', RedirectView.as_view(url='/admin/', permanent=False), name='home')
 ]
 
 if settings.DEBUG:

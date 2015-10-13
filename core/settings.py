@@ -22,13 +22,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'django_extensions',
-    'colorful',
     'ordered_model',
     'solo',
-
-    'subway',
-    'immovables',
-    'plain_frontend',
 )
 
 MIDDLEWARE_CLASSES = (
