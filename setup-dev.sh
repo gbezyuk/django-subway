@@ -1,15 +1,6 @@
 #!/bin/sh
 echo 'This script will setup Django Starter project development environemnt for you\n'
 
-echo 'Compiling translations; you need to have gettext installed'
-cd core
-../manage.py compilemessages -l ru
-cd ..
-cd subway
-../manage.py compilemessages -l ru
-cd ..
-echo '\n'
-
 echo 'Creating python3 virtual environment'
 virtualenv -p python3 venv
 echo '\n'
@@ -20,6 +11,15 @@ echo '\n'
 
 echo 'Installing dependencies'
 pip install -r requirements.txt
+echo '\n'
+
+echo 'Compiling translations; you need to have gettext installed'
+cd core
+../manage.py compilemessages -l ru
+cd ..
+cd subway
+../manage.py compilemessages -l ru
+cd ..
 echo '\n'
 
 echo 'Initializing database structure'
