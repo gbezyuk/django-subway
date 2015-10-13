@@ -24,6 +24,8 @@ INSTALLED_APPS = (
     'django_extensions',
     'ordered_model',
     'solo',
+
+    'subway'
 )
 
 MIDDLEWARE_CLASSES = (

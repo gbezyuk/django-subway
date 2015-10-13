@@ -8,3 +8,4 @@ ipython==4.0.0
 pytz
 django-ordered-model==0.4.2
 django-solo-grappelli
+git+git://github.com/gbezyuk/django-colorful.git@patch-1#egg=django-colorful

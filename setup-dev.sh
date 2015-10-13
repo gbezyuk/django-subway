@@ -5,6 +5,9 @@ echo 'Compiling translations; you need to have gettext installed'
 cd core
 ../manage.py compilemessages -l ru
 cd ..
+cd subway
+../manage.py compilemessages -l ru
+cd ..
 echo '\n'
 
 echo 'Creating python3 virtual environment'
@@ -24,8 +27,8 @@ echo 'Initializing database structure'
 echo '\n'
 
 echo 'Installing fixtures'
-#echo ' - subway'
-#./manage.py loaddata subway/fixtures/spb.json
+echo ' - subway'
+./manage.py loaddata subway/fixtures/spb.json
 echo '\n'
 
 echo 'All done. you are ready to activate your virtual environment, create superuser and run the development server'
