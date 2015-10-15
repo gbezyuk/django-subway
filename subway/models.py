@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from core.shared.models import NameTimestampsModel, OrderedModel, IsEnabledModel
