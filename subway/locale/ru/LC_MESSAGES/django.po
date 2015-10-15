@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-11 14:32+0300\n"
+"POT-Creation-Date: 2015-10-15 18:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,34 +23,52 @@ msgstr ""
 msgid "Subway"
 msgstr "Метро"
 
-#: admin.py:30
-msgid "name"
-msgstr "название"
+#: admin.py:38
+msgid "station"
+msgstr "станция"
 
-#: models.py:9
+#: admin.py:51 models.py:44
+msgid "from station"
+msgstr "со станции"
+
+#: admin.py:55 models.py:45
+msgid "to station"
+msgstr "на станцию"
+
+#: models.py:11
 msgid "subway branch"
 msgstr "ветка метро"
 
-#: models.py:10
+#: models.py:12
 msgid "subway branches"
 msgstr "ветки метро"
 
-#: models.py:15 models.py:29
-msgid "is enabled"
-msgstr "включено"
-
-#: models.py:16
+#: models.py:18
 msgid "color"
 msgstr "цвет"
 
-#: models.py:21
+#: models.py:24
 msgid "subway station"
 msgstr "станция метро"
 
-#: models.py:22
+#: models.py:25
 msgid "subway stations"
 msgstr "станции метро"
 
-#: models.py:30
+#: models.py:32
 msgid "branch"
 msgstr "ветка"
+
+#: models.py:38
+msgid "interchange"
+msgstr "пересадка"
+
+#: models.py:39
+msgid "interchanges"
+msgstr "пересадки"
+
+#~ msgid "name"
+#~ msgstr "название"
+
+#~ msgid "is enabled"
+#~ msgstr "включено"
